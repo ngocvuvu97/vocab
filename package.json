@@ -5,6 +5,7 @@
     "scripts": {
         "dev": "next dev",
         "build": "next build",
+        "postbuild": "touch out/.nojekyll",
         "start": "npx --yes serve@latest out -l 3000"
     },
     "dependencies": {
