@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+.DS_Store
+*.log
+.env*
+!.env.example
+english_vocab_pwa_github_pages_plan.md
+english_vocabulary_iphone_local_v2.json
+implement.md

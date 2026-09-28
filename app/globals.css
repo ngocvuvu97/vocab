@@ -1,0 +1,30 @@
+:root{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",system-ui,sans-serif;color:#18213b;background:#f6f7fc;--muted:#788198;--line:#e7e9f1;--primary:#635bff}
+*{box-sizing:border-box}
+body{margin:0;min-height:100dvh;background:linear-gradient(160deg,#f8f9fd,#eef0ff)}
+button,input,select,textarea{font:inherit;font-size:16px}
+button{border:0;cursor:pointer}
+.app-shell{max-width:620px;margin:auto;padding:env(safe-area-inset-top) 18px calc(92px + env(safe-area-inset-bottom))}
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:20px 0 18px}
+.topbar h1{margin:3px 0;font-size:28px}
+.eyebrow{font-size:11px;letter-spacing:.12em;font-weight:800;color:var(--muted)}
+.card{background:#fff;border:1px solid var(--line);border-radius:24px;padding:20px;margin:12px 0;box-shadow:0 10px 28px #3b43800d}
+.import-button,.primary-button,.secondary-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:46px;padding:0 17px;border-radius:14px;font-weight:750}
+.import-button,.primary-button{background:var(--primary);color:#fff}
+.secondary-button{background:#f7f8fc;color:#35405d;border:1px solid var(--line)}
+.import-button{background:#eeedff;color:#5148dc;min-height:40px}
+.import-button input,.primary-button input,.secondary-button input{display:none}
+.section-heading{display:flex;justify-content:space-between;align-items:center}
+.section-heading h2{margin:0}
+.section-heading span{color:var(--muted);font-size:13px}
+.topic-list{margin-top:12px}
+.back-button{background:transparent;color:var(--primary);padding:0 0 18px}
+.ipa{font-size:18px;color:var(--primary);min-height:26px}
+.answer{margin-top:30px;width:100%;font-size:18px}
+.answer h3{font-size:24px}
+.answer p{color:var(--muted);line-height:1.55}
+.bottom-nav{position:fixed;z-index:3;bottom:0;left:0;right:0;padding:10px 18px calc(10px + env(safe-area-inset-bottom));background:#fffffff0;border-top:1px solid var(--line);backdrop-filter:blur(18px);display:flex;justify-content:center}
+.bottom-nav button{background:transparent;color:var(--muted);min-height:48px;min-width:90px;font-size:21px}
+.bottom-nav span{display:block;font-size:11px;margin-top:2px}
+.bottom-nav .active{color:var(--primary);font-weight:800}
+@media(max-width:420px){.app-shell{padding-left:14px;padding-right:14px}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
